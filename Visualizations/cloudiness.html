@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Latitude Analysis-Cloudiness</Analysis-Cloudiness></title>
+    <title>Latitude Analysis-Cloudiness</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
 </head>
@@ -51,37 +51,43 @@
                         <hr>
                         <img src="../assets/images/Fig3.png" class='img-fluid' alt="cloudymap">
                         <p>
-                            Here is the latitude vs. cloudiness scatter plot. It shows the percent cloudiness for each city in the dataset, 
-                            with the equator represented by x=0. There are no obvious trends related to the equator, however, 
-                            it appears that many cities have cloudiness at extremes, with multiple points overlapping on
-                             y=0 and y=100.
+                            Here is the latitude vs. cloudiness scatter plot. It shows the percent cloudiness for each city when 
+                            latitude changes. According to the plot, the relashionship between these two variable is very week.
                         </p>
                     </div>
                 </div>
-                <div class='col-md-5'>
-                    <div class='box' align="center" id="rightbox">
-                        <h1 align="center">Visualizations</h1>
-                        <hr>
-                        <div>
-                            <a href="https://juetingxu.github.io/WebDesign_challenge/Visualizations/temp.html"><img src= "https://juetingxu.github.io/WebDesign_challenge/assets/Fig1.png" id='vizimage'></a>
-                            <a href="https://juetingxu.github.io/WebDesign_challenge/Visualizations/cloudiness.html"><img src= "https://juetingxu.github.io/WebDesign_challenge/assets/Fig2.png" id='plotviz'></a>
-                            <a href="https://juetingxu.github.io/WebDesign_challenge/Visualizations/humidity.html"><img src= "https://juetingxu.github.io/WebDesign_challenge/assets/Fig3.png" id='vizimage'></a>
-                            <a href="https://juetingxu.github.io/WebDesign_challenge/Visualizations/windspeed.html"><img src= "https://juetingxu.github.io/WebDesign_challenge/assets/Fig4.png" id='vizimage'></a>
-                        </div>
-                    </div>
+                <div class="col-sm-4">
+                    <h2>Visualizations</h2> 
+                    <ul class="list-group list-group-horizontal">
+                      <li class="list-group-item p-0">
+                          <a href="https://juetingxu.github.io/WebDesign_challenge/Visualizations/temp.html" class = 'text-decoration-none'>
+                            <p class="text-center m-0 text-body">Max Temp</p>
+                            <img src="../assets/images/Fig1.png" class="img-fluid" alt="max_tempmap">
+                          </a>
+                      </li>
+                      <li class="list-group-item p-0"> 
+                        <a href="https://juetingxu.github.io/WebDesign_challenge/Visualizations/humidity.html" class = 'text-decoration-none'>
+                          <p class="text-center m-0 text-body">Humidity</p>  
+                          <img src="../assets/images/Fig2.png" class="img-fluid" alt="humiditymap">
+                        </a> 
+                      </li>
+                      </ul>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item p-0">
+                          <a href="https://juetingxu.github.io/WebDesign_challenge/Visualizations/cloudiness.html" class = 'text-decoration-none'>
+                            <p class="text-center m-0 text-body">Cloudiness</p>      
+                            <img src="../assets/images/Fig3.png" class="img-fluid" alt="cloudymap">
+                          </a>
+                        </li>
+                        <li class="list-group-item p-0">   
+                          <a href="https://juetingxu.github.io/WebDesign_challenge/Visualizations/windspeed.html" class = 'text-decoration-none'>
+                            <p class="text-center m-0 text-body">Wind Speed</p>    
+                            <img src="../assets/images/Fig4.png" class="img-fluid" alt="wind_speed_map"> 
+                          </a>
+                        </li>
+                      </ul>            
                 </div>
             </div>
         </div>
-
-    <!-- The following scripts integrate with bootstrap and enable the dropdown menu in the navbar -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
 </body>
-<footer class="page-footer font-small bg-dark">
-    <div class ="footer-copyright text-center py-3" style="color:lightgrey">
-        © Copyright 2020 Ben Anderson
-    </div>
-</footer>
 </html>
