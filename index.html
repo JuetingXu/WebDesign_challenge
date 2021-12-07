@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Latitude Analysis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="https://JuetingXu.github.io/WebDesign_challenge/">Latitude Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Visualizations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://JuetingXu.github.io/WebDesign_challenge/Visualizations/temp.html">Temperature</a>
+                        <a class="dropdown-item" href="https://JuetingXu.github.io/WebDesign_challenge/Visualizations/humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="https://JuetingXu.github.io/WebDesign_challenge/Visualizations/cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="https://JuetingXu.github.io/WebDesign_challenge/Visualizations/windspeed.html">Wind Speed</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://JuetingXu.github.io/WebDesign_challenge/Resources/comparison.html">Comparison</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://JuetingXu.github.io/WebDesign_challenge/Resources/data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class='container'>
+        <div class='row'>
+            <div class='col-md-7'>
+                <div class='box' id="leftbox">
+                    <h1>Summary: Latitude vs. X</h1>
+                    <hr>
+                    <img src= "assets/images/Fig1.png" align="left" height=220px>
+                    <h4>
+                        The purpose of this project was to analyse weather trends based on a location's distance from the
+                        equator. I used the OpenWeatherMap API to assemble a weather dataset for over 500 cities across 
+                        the globe. 
+                        <br>
+                        <br>
+                        Using pandas and matplotlib Python libraries, I plotted four weather variables against latitude: 
+                        cloudiness, humidity, maximum temperature, and wind speed. This site provides the raw dataset, 
+                        the plots created, and explanations of trends and correlations observed.
+                    </h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Visualizations</h2> 
+                <ul class="list-group list-group-horizontal">
+                  <li class="list-group-item p-0">
+                      <a href="https://juetingXu.github.io/WebDesign_challenge/Visualizations/temp.html" class = 'text-decoration-none'>
+                        <p class="text-center m-0 text-body">Max Temp</p>
+                        <img src="assets/images/Fig1.png" class="img-fluid" alt="max_tempmap">
+                      </a>
+                  </li>
+                  <li class="list-group-item p-0"> 
+                    <a href="https://JuetingXu.github.io/WebDesign_challenge/Visualizations/humidity.html" class = 'text-decoration-none'>
+                      <p class="text-center m-0 text-body">Humidity</p>  
+                      <img src="assets/images/Fig2.png" class="img-fluid" alt="humiditymap">
+                    </a> 
+                  </li>
+                  </ul>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item p-0">
+                      <a href="https://JuetingXu.github.io/WebDesign_challenge/Visualizations/cloudiness.html" class = 'text-decoration-none'>
+                        <p class="text-center m-0 text-body">Cloudiness</p>      
+                        <img src="assets/images/Fig3.png" class="img-fluid" alt="cloudymap">
+                      </a>
+                    </li>
+                    <li class="list-group-item p-0">   
+                      <a href="https://JuetingXu.github.io/WebDesign_challenge/Visualizations/wind_speed.html" class = 'text-decoration-none'>
+                        <p class="text-center m-0 text-body">Wind Speed</p>    
+                        <img src="assets/images/Fig4.png" class="img-fluid" alt="wind_speed_map"> 
+                      </a>
+                    </li>
+                  </ul>           
+              </div>
+        </div>
+    </div>
+
+    <!-- The following scripts integrate with bootstrap and enable the dropdown menu in the navbar -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
